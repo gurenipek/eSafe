@@ -1,0 +1,476 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4620 ]
+[d frameptr 4065 ]
+"14 /home/figur/Desktop/Projeler/eKasa/eSafe.X/adc.h
+[v _init_ADC_Potentiometer init_ADC_Potentiometer `(v  1 e 1 0 ]
+"31
+[v _config_ADC_Potentiometer config_ADC_Potentiometer `(v  1 e 1 0 ]
+"39
+[v _config_ADC_Thermometer config_ADC_Thermometer `(v  1 e 1 0 ]
+"47
+[v _init_ADC_Thermometer init_ADC_Thermometer `(v  1 e 1 0 ]
+"33 /home/figur/Desktop/Projeler/eKasa/eSafe.X/ISR.h
+[v _my_ISR my_ISR `IIH(v  1 e 1 0 ]
+"49 /home/figur/Desktop/Projeler/eKasa/eSafe.X/LCD.h
+[v _LCDCmd LCDCmd `(v  1 e 1 0 ]
+"59
+[v _LCDDat LCDDat `(v  1 e 1 0 ]
+"73
+[v _LCDGoto LCDGoto `(v  1 e 1 0 ]
+"85
+[v _LCDStr LCDStr `(v  1 e 1 0 ]
+"102
+[v _InitLCD InitLCD `(v  1 e 1 0 ]
+"40 /home/figur/Desktop/Projeler/eKasa/eSafe.X/timers.h
+[v _init_TIMER0 init_TIMER0 `(v  1 e 1 0 ]
+"60
+[v _init_TIMER1 init_TIMER1 `(v  1 e 1 0 ]
+"80
+[v _delayWithTimer2 delayWithTimer2 `(v  1 e 1 0 ]
+"92
+[v _init_TIMER2 init_TIMER2 `(v  1 e 1 0 ]
+"7 /opt/microchip/xc8/v2.32/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.32/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /opt/microchip/xc8/v2.32/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"7 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 /opt/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /opt/microchip/xc8/v2.32/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /opt/microchip/xc8/v2.32/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"24 /home/figur/Desktop/Projeler/eKasa/eSafe.X/eSafeMain.c
+[v _main main `(v  1 e 1 0 ]
+"252
+[v _passwordCheck passwordCheck `(i  1 e 2 0 ]
+"264
+[v _displayNumbers displayNumbers `(v  1 e 1 0 ]
+"310
+[v _init_PORTB init_PORTB `(v  1 e 1 0 ]
+"327
+[v _init_Clock init_Clock `(v  1 e 1 0 ]
+"83 /home/figur/Desktop/Projeler/eKasa/eSafe.X/eSafeMain.h
+[v _digitEntryCount digitEntryCount `uc  1 e 1 0 ]
+"84
+[v _result_ADC result_ADC `uc  1 e 1 0 ]
+"85
+[v _passwordsAttempt passwordsAttempt `[3]uc  1 e 3 0 ]
+"86
+[v _passwordsSet passwordsSet `[3]uc  1 e 3 0 ]
+"87
+[v _segmentData segmentData `[16]uc  1 e 16 0 ]
+"89
+[v _displayData displayData `[4]uc  1 e 4 0 ]
+"90
+[v _downCounter90s downCounter90s `uc  1 e 1 0 ]
+"91
+[v _safeState safeState `uc  1 e 1 0 ]
+"92
+[v _start3 start3 `uc  1 e 1 0 ]
+"93
+[v _firstTime firstTime `uc  1 e 1 0 ]
+"94
+[v _blinkEnable blinkEnable `uc  1 e 1 0 ]
+"95
+[v _lockAgain lockAgain `uc  1 e 1 0 ]
+"96
+[v _TMR2Counter TMR2Counter `ui  1 e 2 0 ]
+"97
+[v _TIM0LOAD TIM0LOAD `l  1 e 4 0 ]
+"98
+[v _TIM1LOAD TIM1LOAD `l  1 e 4 0 ]
+"40 /home/figur/Desktop/Projeler/eKasa/eSafe.X/LCD.h
+[v _lcd_x lcd_x `uc  1 e 1 0 ]
+[v _lcd_y lcd_y `uc  1 e 1 0 ]
+"52 /opt/microchip/mplabx/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8/pic/include/proc/pic18f4620.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"189
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"535
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"677
+[v _PORTE PORTE `VEuc  1 e 1 @3972 ]
+[s S92 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+`uc 1 RE3 1 0 :1:3 
+]
+"735
+[s S97 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 CS 1 0 :1:2 
+`uc 1 MCLR 1 0 :1:3 
+]
+[s S102 . 1 `uc 1 NOT_RD 1 0 :1:0 
+]
+[s S104 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_WR 1 0 :1:1 
+]
+[s S107 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_CS 1 0 :1:2 
+]
+[s S110 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_MCLR 1 0 :1:3 
+]
+[s S113 . 1 `uc 1 nRD 1 0 :1:0 
+`uc 1 nWR 1 0 :1:1 
+`uc 1 nCS 1 0 :1:2 
+`uc 1 nMCLR 1 0 :1:3 
+]
+[s S118 . 1 `uc 1 AN5 1 0 :1:0 
+`uc 1 AN6 1 0 :1:1 
+`uc 1 AN7 1 0 :1:2 
+`uc 1 VPP 1 0 :1:3 
+]
+[s S123 . 1 `uc 1 PD2 1 0 :1:0 
+`uc 1 PC2 1 0 :1:1 
+`uc 1 CCP10 1 0 :1:2 
+`uc 1 CCP9E 1 0 :1:3 
+]
+[s S128 . 1 `uc 1 RDE 1 0 :1:0 
+`uc 1 WRE 1 0 :1:1 
+`uc 1 PB2 1 0 :1:2 
+`uc 1 PC3E 1 0 :1:3 
+]
+[u S133 . 1 `S92 1 . 1 0 `S97 1 . 1 0 `S102 1 . 1 0 `S104 1 . 1 0 `S107 1 . 1 0 `S110 1 . 1 0 `S113 1 . 1 0 `S118 1 . 1 0 `S123 1 . 1 0 `S128 1 . 1 0 ]
+[v _PORTEbits PORTEbits `VES133  1 e 1 @3972 ]
+"1380
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1602
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"2046
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S193 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+"2296
+[u S207 . 1 `S193 1 . 1 0 `S92 1 . 1 0 ]
+[v _TRISEbits TRISEbits `VES207  1 e 1 @3990 ]
+[s S51 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"2596
+[s S60 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S64 . 1 `S51 1 . 1 0 `S60 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES64  1 e 1 @3998 ]
+"4373
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"4444
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"4529
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+"4655
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"4662
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5036
+[v _T2CON T2CON `VEuc  1 e 1 @4042 ]
+"5107
+[v _PR2 PR2 `VEuc  1 e 1 @4043 ]
+"5217
+[v _TMR2 TMR2 `VEuc  1 e 1 @4044 ]
+"5224
+[v _T1CON T1CON `VEuc  1 e 1 @4045 ]
+"5334
+[v _TMR1L TMR1L `VEuc  1 e 1 @4046 ]
+"5341
+[v _TMR1H TMR1H `VEuc  1 e 1 @4047 ]
+"5856
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"5940
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"5947
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"6768
+[v _ADIE ADIE `VEb  1 e 0 @31982 ]
+"6771
+[v _ADIF ADIF `VEb  1 e 0 @31990 ]
+"6774
+[v _ADIP ADIP `VEb  1 e 0 @31998 ]
+"7083
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"7155
+[v _INT0IE INT0IE `VEb  1 e 0 @32660 ]
+"7158
+[v _INT0IF INT0IF `VEb  1 e 0 @32657 ]
+"7170
+[v _INT1IE INT1IE `VEb  1 e 0 @32643 ]
+"7173
+[v _INT1IF INT1IF `VEb  1 e 0 @32640 ]
+"7191
+[v _INT2IE INT2IE `VEb  1 e 0 @32644 ]
+"7194
+[v _INT2IF INT2IF `VEb  1 e 0 @32641 ]
+"7203
+[v _INTEDG0 INTEDG0 `VEb  1 e 0 @32654 ]
+"7206
+[v _INTEDG1 INTEDG1 `VEb  1 e 0 @32653 ]
+"7218
+[v _IPEN IPEN `VEb  1 e 0 @32391 ]
+"7221
+[v _IRCF0 IRCF0 `VEb  1 e 0 @32412 ]
+"7224
+[v _IRCF1 IRCF1 `VEb  1 e 0 @32413 ]
+"7227
+[v _IRCF2 IRCF2 `VEb  1 e 0 @32414 ]
+"7650
+[v _PEIE PEIE `VEb  1 e 0 @32662 ]
+"7668
+[v _PLLEN PLLEN `VEb  1 e 0 @31966 ]
+"7677
+[v _PSA PSA `VEb  1 e 0 @32427 ]
+"7776
+[v _RBIE RBIE `VEb  1 e 0 @32659 ]
+"7779
+[v _RBIF RBIF `VEb  1 e 0 @32656 ]
+"7782
+[v _RBIP RBIP `VEb  1 e 0 @32648 ]
+"7785
+[v _RBPU RBPU `VEb  1 e 0 @32655 ]
+"7812
+[v _RC5 RC5 `VEb  1 e 0 @31765 ]
+"8076
+[v _T08BIT T08BIT `VEb  1 e 0 @32430 ]
+"8082
+[v _T0CS T0CS `VEb  1 e 0 @32429 ]
+"8091
+[v _T0PS0 T0PS0 `VEb  1 e 0 @32424 ]
+"8094
+[v _T0PS1 T0PS1 `VEb  1 e 0 @32425 ]
+"8097
+[v _T0PS2 T0PS2 `VEb  1 e 0 @32426 ]
+"8109
+[v _T1CKPS0 T1CKPS0 `VEb  1 e 0 @32364 ]
+"8112
+[v _T1CKPS1 T1CKPS1 `VEb  1 e 0 @32365 ]
+"8115
+[v _T1OSCEN T1OSCEN `VEb  1 e 0 @32363 ]
+"8169
+[v _TMR0IE TMR0IE `VEb  1 e 0 @32661 ]
+"8172
+[v _TMR0IF TMR0IF `VEb  1 e 0 @32658 ]
+"8178
+[v _TMR0ON TMR0ON `VEb  1 e 0 @32431 ]
+"8181
+[v _TMR1CS TMR1CS `VEb  1 e 0 @32361 ]
+"8184
+[v _TMR1IE TMR1IE `VEb  1 e 0 @31976 ]
+"8187
+[v _TMR1IF TMR1IF `VEb  1 e 0 @31984 ]
+"8193
+[v _TMR1ON TMR1ON `VEb  1 e 0 @32360 ]
+"8196
+[v _TMR2IE TMR2IE `VEb  1 e 0 @31977 ]
+"8199
+[v _TMR2IF TMR2IF `VEb  1 e 0 @31985 ]
+"8205
+[v _TMR2ON TMR2ON `VEb  1 e 0 @32338 ]
+"24 /home/figur/Desktop/Projeler/eKasa/eSafe.X/eSafeMain.c
+[v _main main `(v  1 e 1 0 ]
+{
+"75
+[v main@i i `i  1 a 2 37 ]
+"29
+[v main@isValid isValid `i  1 a 2 34 ]
+"28
+[v main@attemption attemption `uc  1 a 1 39 ]
+"27
+[v main@heaterTemperature heaterTemperature `uc  1 a 1 36 ]
+"245
+} 0
+"252
+[v _passwordCheck passwordCheck `(i  1 e 2 0 ]
+{
+"253
+[v passwordCheck@n n `uc  1 a 1 21 ]
+"261
+} 0
+"92 /home/figur/Desktop/Projeler/eKasa/eSafe.X/timers.h
+[v _init_TIMER2 init_TIMER2 `(v  1 e 1 0 ]
+{
+"103
+} 0
+"60
+[v _init_TIMER1 init_TIMER1 `(v  1 e 1 0 ]
+{
+"77
+} 0
+"40
+[v _init_TIMER0 init_TIMER0 `(v  1 e 1 0 ]
+{
+"56
+} 0
+"310 /home/figur/Desktop/Projeler/eKasa/eSafe.X/eSafeMain.c
+[v _init_PORTB init_PORTB `(v  1 e 1 0 ]
+{
+"324
+} 0
+"327
+[v _init_Clock init_Clock `(v  1 e 1 0 ]
+{
+"333
+} 0
+"47 /home/figur/Desktop/Projeler/eKasa/eSafe.X/adc.h
+[v _init_ADC_Thermometer init_ADC_Thermometer `(v  1 e 1 0 ]
+{
+"62
+} 0
+"14
+[v _init_ADC_Potentiometer init_ADC_Potentiometer `(v  1 e 1 0 ]
+{
+"29
+} 0
+"264 /home/figur/Desktop/Projeler/eKasa/eSafe.X/eSafeMain.c
+[v _displayNumbers displayNumbers `(v  1 e 1 0 ]
+{
+"265
+[v displayNumbers@digitH digitH `uc  1 a 1 31 ]
+[v displayNumbers@digitL digitL `uc  1 a 1 30 ]
+"264
+[v displayNumbers@value value `ui  1 p 2 25 ]
+[v displayNumbers@digitNo digitNo `uc  1 p 1 27 ]
+"307
+} 0
+"7 /opt/microchip/xc8/v2.32/pic/sources/c99/common/awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 23 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 22 ]
+[v ___awdiv@counter counter `uc  1 a 1 21 ]
+"7
+[v ___awdiv@dividend dividend `i  1 p 2 17 ]
+[v ___awdiv@divisor divisor `i  1 p 2 19 ]
+"41
+} 0
+"80 /home/figur/Desktop/Projeler/eKasa/eSafe.X/timers.h
+[v _delayWithTimer2 delayWithTimer2 `(v  1 e 1 0 ]
+{
+"81
+[v delayWithTimer2@currentVal currentVal `ui  1 a 2 19 ]
+"80
+[v delayWithTimer2@milliseconds milliseconds `ui  1 p 2 17 ]
+"90
+} 0
+"39 /home/figur/Desktop/Projeler/eKasa/eSafe.X/adc.h
+[v _config_ADC_Thermometer config_ADC_Thermometer `(v  1 e 1 0 ]
+{
+"45
+} 0
+"31
+[v _config_ADC_Potentiometer config_ADC_Potentiometer `(v  1 e 1 0 ]
+{
+"37
+} 0
+"85 /home/figur/Desktop/Projeler/eKasa/eSafe.X/LCD.h
+[v _LCDStr LCDStr `(v  1 e 1 0 ]
+{
+"86
+[v LCDStr@i i `uc  1 a 1 25 ]
+"85
+[v LCDStr@str str `*.25Cuc  1 p 2 21 ]
+"98
+} 0
+"73
+[v _LCDGoto LCDGoto `(v  1 e 1 0 ]
+{
+[v LCDGoto@p_2 p_2 `uc  1 a 1 wreg ]
+[v LCDGoto@p_2 p_2 `uc  1 a 1 wreg ]
+[v LCDGoto@p_1 p_1 `uc  1 p 1 19 ]
+[v LCDGoto@p_2 p_2 `uc  1 a 1 20 ]
+"81
+} 0
+"59
+[v _LCDDat LCDDat `(v  1 e 1 0 ]
+{
+[v LCDDat@dat dat `uc  1 a 1 wreg ]
+[v LCDDat@dat dat `uc  1 a 1 wreg ]
+[v LCDDat@dat dat `uc  1 a 1 18 ]
+"68
+} 0
+"102
+[v _InitLCD InitLCD `(v  1 e 1 0 ]
+{
+"115
+} 0
+"49
+[v _LCDCmd LCDCmd `(v  1 e 1 0 ]
+{
+[v LCDCmd@cmd cmd `uc  1 a 1 wreg ]
+[v LCDCmd@cmd cmd `uc  1 a 1 wreg ]
+[v LCDCmd@cmd cmd `uc  1 a 1 18 ]
+"57
+} 0
+"33 /home/figur/Desktop/Projeler/eKasa/eSafe.X/ISR.h
+[v _my_ISR my_ISR `IIH(v  1 e 1 0 ]
+{
+"37
+[v my_ISR@read_ADC_Raw read_ADC_Raw `us  1 a 2 15 ]
+"38
+[v my_ISR@before before `uc  1 a 1 14 ]
+"36
+[v my_ISR@halfSec halfSec `uc  1 s 1 halfSec ]
+"313
+} 0
+"7 /opt/microchip/xc8/v2.32/pic/sources/c99/common/awdiv.c
+[v i2___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v i2___awdiv@quotient quotient `i  1 a 2 6 ]
+"11
+[v i2___awdiv@sign sign `uc  1 a 1 5 ]
+[v i2___awdiv@counter counter `uc  1 a 1 4 ]
+"7
+[v i2___awdiv@dividend dividend `i  1 p 2 0 ]
+[v i2___awdiv@divisor divisor `i  1 p 2 2 ]
+"41
+} 0
+"7 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
