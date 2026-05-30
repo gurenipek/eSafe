@@ -7,6 +7,6 @@ A low-level embedded systems project written in C for a microcontroller developm
 - Direct hardware control via register-level programming, interrupt handling, and timer management
 
 Technical details:
-Written in bare-metal C — no abstractions or HAL libraries. Hardware interaction is handled directly through memory-mapped registers, with state machines managing the safe's operational modes and hardware interrupts driving the thermostat and input response.
+Written in bare-metal C, but I hope the comments help. Hardware interaction is handled directly through memory-mapped registers, especially for the LCD display screen and keyboard inputs. 
 Context:
-Developed as coursework for an Embedded Systems course at Middle East Technical University.
+Microcontroller used: PIC18F8722 (Microchip Technology Inc.) Developed as coursework for an Embedded Systems course at Middle East Technical University.
